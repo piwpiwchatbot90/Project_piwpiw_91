@@ -30,14 +30,14 @@ module.exports = {
     const repliedImage = event.messageReply?.attachments?.[0];
 
     if (!prompt || !repliedImage || repliedImage.type !== "photo") {
-      return message.reply("🐤 | Please reply to a photo with your prompt to edit it.");
+      return message.reply("🐤 | Piw Piw Chat Bot Please reply to a photo with your prompt to edit it.");
     }
 
     const cacheDir = path.join(__dirname, "cache");
     await fs.ensureDir(cacheDir);
 
     const imgPath = path.join(cacheDir, `${Date.now()}_edit.jpg`);
-    const waitMsg = await message.reply("🪄 | Editing your image, please wait...");
+    const waitMsg = await message.reply("🪄 | Piw Piw Chat Bot Editing your image, please wait...");
 
     try {
       const baseURL = await mahmud();
@@ -50,12 +50,12 @@ module.exports = {
       await fs.writeFile(imgPath, Buffer.from(res.data, "binary"));
 
       await message.reply({
-        body: `✅ | Edited image for: "${prompt}"`,
+        body: `✅ | Piw Piw Chat Bot Edited image for: "${prompt}"`,
         attachment: fs.createReadStream(imgPath)
       });
     } catch (err) {
       console.error(err);
-      message.reply("🥹 error baby, Please try again later.");
+      message.reply("🥹 error darling, Please try again later.");
     } finally {
       setTimeout(() => fs.remove(imgPath).catch(() => {}), 10000);
       if (waitMsg?.messageID) api.unsendMessage(waitMsg.messageID);
