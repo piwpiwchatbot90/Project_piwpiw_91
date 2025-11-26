@@ -18,7 +18,7 @@ module.exports = {
 
     onStart: async function ({ args, message }) {
         if (args.length === 0) {
-            return message.reply("❗ Please provide your date of birth in the format `YYYY-MM-DD`.");
+            return message.reply("❗ Piw Piw Chat Bot please provide your date of birth in the format `YYYY-MM-DD`.");
         }
 
         const inputDate = args[0];
@@ -34,7 +34,7 @@ module.exports = {
 
             return message.reply(data.message);
         } catch (error) {
-            return message.reply("🥹error, contact MahMUD");
+            return message.reply("🥹error, contact Gojo Orupe Piw Piw");
         }
     }
 };
