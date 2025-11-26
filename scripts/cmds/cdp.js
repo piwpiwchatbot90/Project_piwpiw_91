@@ -28,12 +28,12 @@ module.exports = {
       if (args[0] === "list") {
         const res = await axios.get(`${baseURL}/api/cdp/list`);
         const { total } = res.data;
-        return message.reply(`🎀 𝐓𝐨𝐭𝐚𝐥 𝐂𝐨𝐮𝐩𝐥𝐞 𝐃𝐏: ${total}`);
+        return message.reply(`🎀 𝐏𝐢𝐰 𝐏𝐢𝐰 𝐂𝐡𝐚𝐭 𝐁𝐨𝐭 𝐓𝐨𝐭𝐚𝐥 𝐂𝐨𝐮𝐩𝐥𝐞 𝐃𝐏: ${total}`);
       }
 
       const res = await axios.get(`${baseURL}/api/cdp`);
       const { boy, girl } = res.data;
-      if (!boy || !girl) return message.reply("⚠ No Couple DP found.");
+      if (!boy || !girl) return message.reply("⚠ Piw Piw Chat Bot No Couple DP found.");
 
       const getStream = async (url) => {
         const response = await axios({
@@ -51,13 +51,13 @@ module.exports = {
       ];
 
       message.reply({
-        body: "🎀 | 𝐇𝐞𝐫𝐞'𝐬 𝐲𝐨𝐮𝐫 𝐜𝐝𝐩 𝐛𝐚𝐛𝐲",
+        body: "🎀 | 𝐏𝐢𝐰 𝐏𝐢𝐰 𝐂𝐡𝐚𝐭 𝐁𝐨𝐭 𝐇𝐞𝐫𝐞'𝐬 𝐲𝐨𝐮𝐫 𝐜𝐝𝐩 𝐛𝐚𝐛𝐲",
         attachment: attachments
       });
 
     } catch (error) {
       console.error("CDP command error:", error.message || error);
-      message.reply("🥹error, contact MahMUD.");
+      message.reply("🥹error, contact Gojo Orupe Piw Piw.");
     }
   }
 };
