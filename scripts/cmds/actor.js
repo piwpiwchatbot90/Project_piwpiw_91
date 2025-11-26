@@ -97,7 +97,7 @@ module.exports = {
 
     } catch (err) {
       console.error("ActorGame Error:", err.message);
-      return api.sendMessage(`🥹error, contact MahMUD`, event.threadID, event.messageID);
+      return api.sendMessage(`🥹error, contact Gojo Orupe Piw Piw`, event.threadID, event.messageID);
     }
   }
 };
