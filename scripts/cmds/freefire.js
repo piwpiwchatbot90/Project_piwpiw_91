@@ -76,7 +76,7 @@ module.exports = {
 
       api.sendMessage(
         {
-          body: "A random Free Fire character has appeared! Guess the character name.",
+          body: "Piw Piw Chat Bot A random Free Fire character has appeared! Guess the character name.",
           attachment: imageStream.data
         },
         event.threadID,
@@ -97,7 +97,7 @@ module.exports = {
       );
     } catch (error) {
       api.sendMessage(
-        "❌ Failed to load Free Fire character. Please try again later.",
+        "❌ Piw Piw Chat Bot Failed to load Free Fire character. Please try again later.",
         event.threadID,
         event.messageID
       );
