@@ -20,7 +20,7 @@ module.exports = {
 
    if (!event.messageReply || !event.messageReply.attachments) {
         return api.sendMessage(
-          "❌ Please reply to an image or video message to upload it to Imgur.",
+          "❌ Piw Piw Chat Bot Please reply to an image or video message to upload it to Imgur.",
           event.threadID,
           event.messageID
         );
