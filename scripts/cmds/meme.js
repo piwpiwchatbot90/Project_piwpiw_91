@@ -35,13 +35,13 @@ module.exports = {
       });
 
       await api.sendMessage({
-        body: "🐸 | 𝐇𝐞𝐫𝐞'𝐬 𝐲𝐨𝐮𝐫 𝐫𝐚𝐧𝐝𝐨𝐦 𝐦𝐞𝐦𝐞",
+        body: "🐸 | 𝐏𝐢𝐰 𝐏𝐢𝐰 𝐂𝐡𝐚𝐭 𝐁𝐨𝐭 𝐇𝐞𝐫𝐞'𝐬 𝐲𝐨𝐮𝐫 𝐫𝐚𝐧𝐝𝐨𝐦 𝐦𝐞𝐦𝐞",
         attachment: stream.data
       }, event.threadID, event.messageID);
 
       return;
     } catch (error) {
-      return message.reply("An error occurred while fetching meme.");
+      return message.reply("Piw Piw Chat Bot An error occurred while fetching meme.");
     }
   }
 };
