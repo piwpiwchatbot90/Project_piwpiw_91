@@ -41,7 +41,7 @@ module.exports = {
       const base = await mahmud();
       const apiURL = `${base}/api/kiss`;
 
-      message.reply("💞 Generating your kiss image, please wait...");
+      message.reply("💞 Piw Piw Chat Bot Generating your kiss image, please wait...");
 
       const response = await axios.post(
         apiURL,
@@ -53,7 +53,7 @@ module.exports = {
       fs.writeFileSync(imgPath, Buffer.from(response.data, "binary"));
 
       message.reply({
-        body: "💋 Here’s your kiss image!",
+        body: "💋 Piw Piw Chat Bot Here’s your kiss image!",
         attachment: fs.createReadStream(imgPath)
       });
 
@@ -65,7 +65,7 @@ module.exports = {
 
     } catch (err) {
       console.error("Error in kiss command:", err.message || err);
-      message.reply("🥹error, contact MahMUD.");
+      message.reply("🥹error, contact Gojo Orupe Piw Piw.");
     }
   }
 };
