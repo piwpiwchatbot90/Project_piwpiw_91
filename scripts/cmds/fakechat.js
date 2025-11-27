@@ -43,10 +43,10 @@ module.exports = {
         targetId = args[0];
         userText = args.slice(1).join(" ").trim();
       } else {
-        return message.reply("❌ Please reply, mention, or provide user uid.");
+        return message.reply("❌ Piw Piw Chat Bot Please reply, mention, or provide user uid.");
       }
 
-      if (!userText) return message.reply("❌ Please provide the text for the fake chat.");
+      if (!userText) return message.reply("❌ Piw Piw Chat Bot Please provide the text for the fake chat.");
 
       let userName = "Unknown";
       try {
@@ -65,7 +65,7 @@ module.exports = {
       fs.writeFileSync(filePath, Buffer.from(response.data, "binary"));
 
       await message.reply({
-        body: `🗨️ Fake chat generated for: ${userName}`,
+        body: `Piw Piw Chat Bot 🗨️ Fake chat generated for: ${userName}`,
         attachment: fs.createReadStream(filePath),
       });
 
@@ -73,7 +73,7 @@ module.exports = {
         try { fs.unlinkSync(filePath); } catch {}
       }, 5000);
     } catch {
-      await message.reply("🥹error, contact MahMUD.");
+      await message.reply("🥹error, contact Gojo Orupe Piw Piw.");
     }
   },
 };
